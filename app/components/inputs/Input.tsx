@@ -34,7 +34,8 @@ const Input = ({
         <input
           id={id}
           type={type}
-          autoComplete={id}
+          //to remove autofill
+          autoComplete="new-password"
           disabled={disabled}
           {...register(id, { required })}
           className={clsx(
